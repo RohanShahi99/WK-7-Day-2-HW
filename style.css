@@ -1,0 +1,197 @@
+/* Header */
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+/* Responsive Background Image */
+#test header {
+    background: url(img/cliff_ocean.jpg) no-repeat center center;
+    background-size: cover; 
+    background-attachment: fixed;
+    min-height: 400px;
+    width: 100%;
+}
+/* Responsive Main Header */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%; 
+    max-width: 700px; 
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+}
+/* Logo Adjustments */
+.main-header .logo img {
+    width: 80px; /* Adjust size for responsiveness */
+    height: auto;
+    margin: 0 2em 0 0;
+    float: left;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #test header {
+        background-size: contain; /* Keeps the full image visible */
+    }
+    
+    .main-header {
+        width: 95%; /* Takes more space on smaller screens */
+    }
+
+    .main-header .logo img {
+        width: 60px; /* Reduce logo size */
+    }
+}
+
+/* Navigation */
+.main-menu {
+    margin-left: 206px;
+    font-weight: 400;
+}
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 84px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888;
+}
+.main-menu ul li a:hover {
+    color: #9ed034;
+}
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none;
+}
+.main-menu ul li.active a {
+    color: #fff;
+}
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288C3;
+}
+section #partners {  
+    width: 1200px;
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
+}
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
+}
+footer #disclaimer {
+    clear: both;
+}
+
+footer #disclaimer p {
+    font-size: 0.85em;
+    text-align: center;
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+    
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+}
+
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+    }
+    .main-header {
+        max-width: 700px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-menu {
+        position: absolute;
+        right: 8.3em;
+      }
+      .main-menu ul li {
+        background-color:rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+      }
+      main {
+        padding: 3em 1em 3em 1em;
+        margin: 0;
+      }
+      #home .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+      }
+}
